@@ -1,0 +1,6 @@
+install.packages("https://github.com/sdparekh/zUMIs/raw/master/dependencies_source/data.table_1.11.5.tar.gz")
+cran_pcks <- c("yaml","shiny","shinythemes","shinyBS","ggplot2","mclust","dplyr","cowplot","Matrix","BiocManager","devtools")
+install.packages(cran_pcks)
+bioc_pcks <- c("GenomicRanges","GenomicFeatures","GenomicAlignments","AnnotationDbi","Rsubread")
+BiocManager::install(bioc_pcks)
+devtools::install_github("hadley/multidplyr")
